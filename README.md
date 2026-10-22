@@ -1,5 +1,5 @@
 # SIMADA
-### Sistem Informasi Pengadaan Barang/Jasa
+### Sistem Informasi Pengadaan Barang
 
 <p align="center">
   <strong>Sistem Informasi Pengadaan Barang/Jasa Kabupaten Kebumen</strong>
