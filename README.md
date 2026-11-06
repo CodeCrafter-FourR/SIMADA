@@ -1,289 +1,421 @@
-# Evaluasi Tengah Semester (UTS)
+<div align="center">
 
-**Batas pengumpulan:** 7 November 2026, pukul 23.59 WIB
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:111827,45:1D4ED8,100:06B6D4&height=230&section=header&text=SIMADA&fontSize=68&fontColor=ffffff&fontAlignY=36&desc=Sistem%20Informasi%20Pengadaan%20Barang%2FJasa%20Kabupaten%20Kebumen&descSize=15&descAlignY=58&animation=twinkling" alt="SIMADA animated header">
 
-## Instruksi untuk Mahasiswa
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&pause=1100&color=2563EB&center=true&vCenter=true&width=720&lines=Procurement+Dashboard+%26+Monitoring;PHP+Native+%7C+OOP+%7C+MySQL;Academic+Prototype+%E2%80%94+Software+Engineering" alt="Animated project description">
 
-1.  Ujian ini memiliki bobot **30%** dari total nilai mata kuliah (item
-    nomor 2 dan 5 pada bagian *Assessment & Grading*).
-2.  Mahasiswa wajib mengumpulkan jawaban melalui Bakrie e-Learning
-    Portal tepat waktu. Keterlambatan pengumpulan akan mendapatkan nilai
-    nol (0). Perwakilan setiap kelompok bertanggung jawab mengunggah
-    hasil mini project.
-3.  Mahasiswa diberikan *Term of Reference* (TOR) pengembangan perangkat
-    lunak SIMADA, yaitu dokumen Kerangka Acuan Kerja (KAK), sebagai
-    referensi utama untuk proyek Ujian Tengah Semester ini.
+<p>
+  <img src="https://img.shields.io/badge/PHP-Native-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP Native">
+  <img src="https://img.shields.io/badge/Architecture-OOP-2563EB?style=for-the-badge" alt="OOP">
+  <img src="https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/Server-Apache-D22128?style=for-the-badge&logo=apache" alt="Apache">
+  <img src="https://img.shields.io/badge/Environment-XAMPP-FB7A24?style=for-the-badge" alt="XAMPP">
+  <img src="https://img.shields.io/badge/Status-UTS%20Prototype-0F9D88?style=for-the-badge" alt="UTS Prototype">
+</p>
 
-## Hasil yang Diharapkan dan Luaran
+**Aplikasi web untuk dashboard, pemantauan, dan pengelolaan informasi paket pengadaan.**
 
-Bagian berikut menjelaskan hasil pembelajaran yang diharapkan
-(*outcomes*) dan luaran yang wajib dikumpulkan (*outputs*).
+[Overview](#-project-overview) ·
+[Features](#-core-features) ·
+[Tech Stack](#-technology-stack) ·
+[Architecture](#-system-architecture) ·
+[Installation](#-installation) ·
+[Database](#-database-structure)
 
-### A. Outcomes
+</div>
 
-1.  Mahasiswa mampu bekerja sama dalam tim untuk menyelesaikan masalah.
-2.  Mahasiswa mampu merumuskan permasalahan yang dihadapi organisasi dan
-    menerjemahkannya menjadi tujuan perancangan perangkat lunak.
-3.  Mahasiswa mampu menggunakan metode dan proses rekayasa perangkat
-    lunak untuk mencapai tujuan.
-4.  Mahasiswa mampu menganalisis permasalahan menggunakan metode
-    rekayasa perangkat lunak serta mengubah hasil analisis menjadi
-    rancangan perangkat lunak berdasarkan paradigma terkini.
-5.  Mahasiswa mampu menyimulasikan hasil rancangan perangkat lunak yang
-    telah disusun.
+---
 
-### B. Outputs
+## Project Overview
 
-1.  **Database dan perangkat lunak**
-    -   Membuat database dan perangkat lunak yang memiliki
-        fungsionalitas untuk menyelesaikan permasalahan yang diberikan.
-    -   Memilih satu modul/halaman utama sesuai arahan presentasi pada
-        minggu ke-7.
-    -   Menyimpan dan mengompres produk dalam format ZIP.
-    -   Menyertakan petunjuk instalasi dan konfigurasi.
-    -   Menyediakan video singkat berdurasi 5 menit yang menunjukkan
-        proses instalasi dan cara mengoperasikan perangkat lunak. Video
-        dapat diunggah ke YouTube atau disimpan di Google Drive.
-2.  **Laporan akademik singkat**
-    -   Maksimal 8 halaman.
-    -   Kertas A4, ukuran huruf 12 pt, dan spasi 1,5.
-    -   Memuat:
-        -   Sampul
-        -   Daftar isi
-        -   Daftar gambar
-        -   Abstrak
-        -   Bab 1: Permasalahan dan tujuan
-        -   Bab 2: Metodologi penyelesaian masalah
-        -   Bab 3: Hasil, termasuk justifikasi jumlah pengembang,
-            estimasi waktu pengerjaan, dan harga perangkat lunak
-            berdasarkan metode FAP dan COCOMO Model II
-        -   Bab 4: Kesimpulan dan referensi
-    -   Referensi menggunakan sistem penomoran IEEE.
-    -   Format berkas: `Group_Name_academic_report.docx` atau
-        `Group_Name_academic_report.pdf`.
-3.  **Software Requirement Specification (SRS)**
-    -   Format: DOCX atau PDF.
-    -   Nama berkas: `Group_Name_SRS.docx` atau `Group_Name_SRS.pdf`.
-4.  **Software Design Documentation (SDD)**
-    -   Format: DOCX atau PDF.
-    -   Nama berkas: `Group_Name_SDD.docx` atau `Group_Name_SDD.pdf`.
-5.  **Software Code Documentation (SCD)**
-    -   Format: DOCX atau PDF, atau tautan ke repositori GitHub.
-    -   Nama berkas: `Group_Name_SCD.docx` atau `Group_Name_SCD.pdf`.
-6.  **Software Testing Documentation (STD)**
-    -   Format: DOCX atau PDF.
-    -   Nama berkas: `Group_Name_STD.docx` atau `Group_Name_STD.pdf`.
-7.  **User Manual**
-    -   Format: DOCX atau PDF.
-    -   Nama berkas: `Group_Name_user_manual.docx` atau
-        `Group_Name_user_manual.pdf`.
-8.  **Kontribusi setiap anggota dan pernyataan penggunaan Generative
-    AI**
-    -   Format: DOCX atau PDF.
-    -   Nama berkas: `Group_Name_contribution.docx` atau
-        `Group_Name_contribution.pdf`.
-    -   Kelompok wajib mengungkapkan bagian dokumen dan komponen
-        perangkat lunak yang dibuat dengan bantuan AI.
-    -   Sertakan prompt yang digunakan beserta keluaran AI yang relevan.
+**SIMADA** merupakan aplikasi berbasis web untuk membantu pencatatan, pemantauan, dan penyajian informasi paket pengadaan barang/jasa di lingkungan Sekretariat Daerah Kabupaten Kebumen.
 
-## Kriteria Penilaian
+Project ini dikembangkan sebagai prototype untuk kebutuhan Ujian Tengah Semester (UTS) mata kuliah Rekayasa Perangkat Lunak. Ruang lingkup implementasi berfokus pada dashboard pengadaan, pengelolaan paket, autentikasi, dan pengaturan akses berdasarkan tiga role pengguna.
 
-  -----------------------------------------------------------------------
-                        No. Kriteria Penilaian                      Bobot
-  ------------------------- ------------------- -------------------------
-                          1 Kelengkapan                                45
-                            perangkat lunak dan 
-                            database, kesiapan  
-                            penggunaan,         
-                            termasuk panduan    
-                            instalasi dan video 
-                            tutorial            
+> [!IMPORTANT]
+> Versi ini merupakan prototype akademik dengan data simulasi. Aplikasi bukan pengganti SPSE/LPSE atau sistem resmi pengadaan pemerintah.
 
-                          2 Kelengkapan,                               15
-                            struktur, dan       
-                            kesesuaian isi      
-                            laporan akademik    
+## Core Features
 
-                          3 Kelengkapan,                               25
-                            akurasi, dan        
-                            konsistensi         
-                            dokumentasi         
-                            perangkat lunak     
-                            (SRS, SDD, SCD,     
-                            STD, dan User       
-                            Manual)             
+<div align="center">
 
-                          4 Kelengkapan dan                            15
-                            transparansi        
-                            dokumentasi         
-                            kontribusi serta    
-                            pernyataan          
-                            penggunaan          
-                            Generative AI       
+| <img src="https://img.shields.io/badge/01-Dashboard-2563EB?style=flat-square" alt="Dashboard"> | <img src="https://img.shields.io/badge/02-Role_Access-0EA5E9?style=flat-square" alt="Role access"> | <img src="https://img.shields.io/badge/03-Approval-10B981?style=flat-square" alt="Approval"> |
+|:--:|:--:|:--:|
+| Ringkasan data pengadaan | Hak akses tiga role | Alur persetujuan paket |
 
-                            **Total**                             **100**
-  -----------------------------------------------------------------------
+</div>
 
-## Rubrik Penilaian
+| Modul | Deskripsi |
+|---|---|
+| **Role-Based Dashboard** | Menampilkan ringkasan dan informasi dashboard sesuai role pengguna. |
+| **Procurement Overview** | Menyajikan daftar paket, kode RUP, OPD, metode, pagu, nilai kontrak, dan status. |
+| **Package Management** | Mendukung alur pengelolaan informasi paket pengadaan. |
+| **Approval Workflow** | Menyediakan proses persetujuan atau penolakan paket oleh PA/KPA. |
+| **User Management** | Admin dapat menambahkan akun pengguna dan menetapkan role. |
+| **Authentication** | Login menggunakan username atau email, logout, dan pengelolaan session. |
+| **Dashboard Statistics** | Menyajikan ringkasan jumlah paket, anggaran, kontrak, status, OPD, dan metode pengadaan. |
+| **Quick Search** | Pencarian paket berdasarkan kode RUP, nama paket, atau OPD pada dashboard. |
 
-### 1. Kesiapan Perangkat Lunak dan Database
+## User Roles
 
-**Bobot maksimum: 45**
+Aplikasi menggunakan tiga role utama:
 
-  -----------------------------------------------------------------------
-  Tingkat                             Deskripsi
-  ----------------------------------- -----------------------------------
-  **Exemplary (100%)**                Perangkat lunak dan database
-                                      selesai sepenuhnya, berfungsi
-                                      dengan baik, siap digunakan, dan
-                                      tidak memiliki bug mayor. Panduan
-                                      deployment lengkap dan video
-                                      tutorial menunjukkan seluruh alur
-                                      sistem dengan jelas serta
-                                      berkualitas tinggi.
+| Role | Hak Akses Utama |
+|---|---|
+| **Admin** | Melihat ringkasan dashboard dan mengelola akun pengguna. |
+| **PA/KPA** | Melihat informasi paket dan menangani antrean otorisasi/persetujuan paket. |
+| **PPK** | Melihat serta mengelola paket yang menjadi tanggung jawabnya. |
 
-  **Proficient (75%)**                Perangkat lunak dan database siap
-                                      untuk di-deploy, tetapi masih
-                                      memiliki bug minor yang tidak
-                                      menghambat fungsi utama.
-                                      Dokumentasi atau video tutorial
-                                      tersedia, tetapi beberapa bagian
-                                      masih kurang mendalam.
+**Pembatasan akses:** menu pengelolaan dan penambahan pengguna hanya tersedia untuk Admin. PA/KPA dan PPK tidak memiliki fitur untuk menambahkan pengguna.
 
-  **Developing (50%)**                Perangkat lunak dan database dapat
-                                      dioperasikan, tetapi belum stabil
-                                      atau masih memiliki fitur penting
-                                      yang belum selesai. Panduan
-                                      instalasi atau video tutorial tidak
-                                      lengkap atau kurang jelas.
+## Technology Stack
 
-  **Novice (25% atau 0%)**            Perangkat lunak gagal dijalankan
-                                      atau di-deploy. Panduan instalasi
-                                      dan video tutorial tidak tersedia,
-                                      tidak dapat digunakan, atau tidak
-                                      dapat dipahami.
-  -----------------------------------------------------------------------
+| Komponen | Teknologi | Penggunaan |
+|---|---|---|
+| Backend | PHP Native | Logika aplikasi dan pemrosesan server-side. |
+| Programming Paradigm | Object-Oriented Programming (OOP) | Pemisahan fungsi aplikasi ke dalam class. |
+| Frontend | HTML5 | Struktur halaman aplikasi. |
+| Styling | CSS3 | Tata letak, komponen, dan tampilan antarmuka. |
+| Client-side | JavaScript | Interaksi antarmuka, termasuk pencarian dashboard. |
+| Database | MySQL / MariaDB | Penyimpanan data aplikasi. |
+| Database Access | PDO | Koneksi dan eksekusi query database. |
+| Web Server | Apache | Menjalankan aplikasi PHP. |
+| Local Environment | XAMPP | Lingkungan pengembangan lokal. |
+| Database Administration | phpMyAdmin | Membuat database dan mengimpor SQL. |
+| Version Control | Git | Pengelolaan versi source code. |
 
-**Skor komponen:**
+> Project menggunakan **PHP Native OOP**, bukan Laravel atau framework PHP lainnya.
 
-    Exemplary   Proficient   Developing    Novice
-  ----------- ------------ ------------ ---------
-           45        33,75         22,5   ≤ 11,25
+## System Architecture
 
-### 2. Kelengkapan dan Struktur Laporan Akademik
+Aplikasi disusun dengan pemisahan tanggung jawab sederhana antara antarmuka, class aplikasi, helper, konfigurasi, dan database.
 
-**Bobot maksimum: 15**
+```mermaid
+flowchart TD
+    U([User]) --> B[Web Browser<br/>HTML · CSS · JavaScript]
+    B --> A[Apache Web Server]
+    A --> P[PHP Application]
+    P --> AU[Auth.php<br/>Authentication]
+    P --> DA[Dashboard.php<br/>Dashboard Logic]
+    P --> H[functions.php<br/>Helpers]
+    AU --> DB[Database.php<br/>PDO]
+    DA --> DB
+    DB --> MY[(MySQL Database<br/>simada)]
 
-  -----------------------------------------------------------------------
-  Tingkat                             Deskripsi
-  ----------------------------------- -----------------------------------
-  **Exemplary (100%)**                Laporan komprehensif, tersusun
-                                      sangat baik sesuai standar
-                                      akademik, dan memiliki kedalaman
-                                      analisis serta kesesuaian tema yang
-                                      tinggi.
+    classDef user fill:#dbeafe,stroke:#2563eb,color:#172554
+    classDef app fill:#e0f2fe,stroke:#0284c7,color:#082f49
+    classDef data fill:#dcfce7,stroke:#16a34a,color:#14532d
+    class U user
+    class B,A,P,AU,DA,H app
+    class DB,MY data
+```
 
-  **Proficient (75%)**                Laporan lengkap dan terorganisasi
-                                      dengan baik, tetapi masih terdapat
-                                      kekurangan kecil dalam kedalaman
-                                      analisis atau kesesuaian isi.
+### Main Application Classes
 
-  **Developing (50%)**                Laporan kurang terstruktur, tidak
-                                      mencakup beberapa bagian penting,
-                                      atau menyajikan analisis yang
-                                      terlalu dangkal.
+| Class | File | Tanggung Jawab |
+|---|---|---|
+| `Database` | `classes/Database.php` | Mengelola koneksi PDO ke MySQL menggunakan pola Singleton serta menyediakan fungsi query. |
+| `Auth` | `classes/Auth.php` | Menangani login, logout, session, identifikasi role, dan pembuatan akun pengguna. |
+| `Dashboard` | `classes/Dashboard.php` | Mengambil data paket dan menghitung statistik dashboard, komposisi metode, serta informasi persetujuan. |
 
-  **Novice (25% atau 0%)**            Laporan tidak memiliki struktur
-                                      yang jelas, berisi materi yang
-                                      tidak relevan, atau disajikan
-                                      dengan buruk.
-  -----------------------------------------------------------------------
+### Request Flow
 
-**Skor komponen:**
+1. Pengguna membuka aplikasi melalui browser.
+2. Apache meneruskan request ke file PHP.
+3. `config.php` memulai session, memuat konfigurasi, class, dan helper.
+4. Class aplikasi menjalankan autentikasi atau proses dashboard sesuai kebutuhan.
+5. `Database.php` mengakses MySQL menggunakan PDO.
+6. Hasil pemrosesan ditampilkan kembali melalui halaman web.
 
-    Exemplary   Proficient   Developing   Novice
-  ----------- ------------ ------------ --------
-           15        11,25          7,5   ≤ 3,75
+## Project Structure
 
-### 3. Dokumentasi Teknis Perangkat Lunak
+Struktur berikut mengikuti direktori source code yang tersedia pada repository:
 
-**Bobot maksimum: 25**
+```text
+ujianrpl/
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── img/
+│       └── logo-simada.png
+│
+├── classes/
+│   ├── Auth.php
+│   ├── Dashboard.php
+│   └── Database.php
+│
+├── helpers/
+│   └── functions.php
+│
+├── DB_sql/
+│   └── simada.sql
+│
+├── test/
+│   ├── bootstrap.php
+│   └── run.php
+│
+├── config.php
+├── dashboard.php
+├── index.html
+├── index.php
+├── login.php
+├── logout.php
+├── tambah-user.php
+└── README.md
+```
 
-Dokumen yang dinilai meliputi SRS, SDD, SCD, STD, dan User Manual.
+<details>\n<summary><strong>📂 Lihat penjelasan direktori dan file</strong></summary>\n\n### Directory and File Description\n\n| Path | Deskripsi |
+|---|---|
+| `assets/css/` | File stylesheet utama aplikasi. |
+| `assets/img/` | Logo dan aset gambar SIMADA. |
+| `classes/` | Class PHP untuk autentikasi, dashboard, dan database. |
+| `helpers/` | Fungsi bantuan yang digunakan oleh halaman aplikasi. |
+| `DB_sql/` | Direktori file SQL database. |
+| `DB_sql/simada.sql` | Struktur tabel, view, relasi, dan data awal database. |
+| `test/` | Bootstrap dan script pengujian aplikasi. |
+| `config.php` | Konfigurasi database, session, autoload class, dan helper. |
+| `index.php` | Entry point aplikasi. |
+| `index.html` | Halaman HTML statis. |
+| `login.php` | Halaman autentikasi pengguna. |
+| `logout.php` | Proses mengakhiri session pengguna. |
+| `dashboard.php` | Halaman dashboard berdasarkan role. |
+| `tambah-user.php` | Halaman penambahan dan daftar akun pengguna. |
+| `README.md` | Dokumentasi project. |\n\n</details>
 
-  -----------------------------------------------------------------------
-  Tingkat                             Deskripsi
-  ----------------------------------- -----------------------------------
-  **Exemplary (100%)**                Seluruh dokumen teknis lengkap,
-                                      akurat, dan konsisten. Spesifikasi
-                                      dalam SRS selaras dengan desain
-                                      dalam SDD serta pengujian yang
-                                      dijelaskan dalam STD.
+## Database Structure
 
-  **Proficient (75%)**                Dokumentasi lengkap, tetapi masih
-                                      terdapat inkonsistensi kecil atau
-                                      sedikit ketidakakuratan dalam
-                                      detail arsitektur dan parameter
-                                      pengujian.
+Database aplikasi menggunakan nama **`simada`** dan didefinisikan pada file `DB_sql/simada.sql`.
 
-  **Developing (50%)**                Dokumentasi tidak lengkap (1--2
-                                      komponen penting tidak tersedia)
-                                      atau terdapat pertentangan
-                                      substansial antar dokumen.
+<details open>\n<summary><strong>🗃️ Detail tabel database</strong></summary>\n\n### Tables\n\n| No. | Nama Tabel | Keterangan |
+|:--:|---|---|
+| 1 | `role` | Data role atau jenis hak akses pengguna. |
+| 2 | `user` | Akun dan informasi pengguna. |
+| 3 | `opd` | Data Organisasi Perangkat Daerah. |
+| 4 | `procurement_method` | Referensi metode pengadaan. |
+| 5 | `procurement_package` | Data utama paket pengadaan. |
+| 6 | `package_personnel` | Relasi personel dengan paket pengadaan. |
+| 7 | `progress` | Informasi perkembangan paket. |
+| 8 | `document` | Metadata dokumen paket. |
+| 9 | `notification` | Data notifikasi. |
+| 10 | `audit_log` | Catatan aktivitas sistem. |
+| 11 | `approvals` | Data keputusan persetujuan paket. |\n\n</details>
 
-  **Novice (25% atau 0%)**            Sebagian besar dokumen tidak
-                                      tersedia, sangat tidak akurat, atau
-                                      hanya berupa template kosong tanpa
-                                      informasi proyek yang relevan.
-  -----------------------------------------------------------------------
+### Database Views
 
-**Skor komponen:**
+Selain tabel, SQL project juga mendefinisikan view:
 
-    Exemplary   Proficient   Developing   Novice
-  ----------- ------------ ------------ --------
-           25        18,75         12,5   ≤ 6,25
+- `packages`
+- `users`
 
-### 4. Dokumentasi Kontribusi dan Pernyataan Generative AI
+View digunakan sebagai sumber data untuk kebutuhan query aplikasi. Tabel penyimpanan utama paket adalah `procurement_package`, sedangkan `packages` merupakan view.
 
-**Bobot maksimum: 15**
+### Simplified Entity Relationship
 
-  -----------------------------------------------------------------------
-  Tingkat                             Deskripsi
-  ----------------------------------- -----------------------------------
-  **Exemplary (100%)**                Dokumentasi kontribusi setiap
-                                      anggota dan penggunaan Generative
-                                      AI disampaikan secara transparan
-                                      dan dapat dipertanggungjawabkan.
-                                      Bagian yang dibantu AI dijelaskan
-                                      secara terperinci dan dibedakan
-                                      dari pekerjaan asli anggota.
+```text
+role
+  |
+  | 1..*
+  v
+user ----------------------+
+  |                        |
+  | PPK                    | activity / approval
+  v                        v
+procurement_package      audit_log
+  |
+  +----------+-------------+-------------+
+  |          |             |             |
+  v          v             v             v
+progress  document    notification   approvals
 
-  **Proficient (75%)**                Pembagian kontribusi tercatat
-                                      dengan jelas. Pernyataan penggunaan
-                                      Generative AI tersedia, tetapi
-                                      belum cukup terperinci dalam
-                                      menjelaskan cakupan penggunaannya.
+opd ----------------> procurement_package
+procurement_method --> procurement_package
 
-  **Developing (50%)**                Pembagian kontribusi tidak merata
-                                      atau kurang jelas, atau pernyataan
-                                      penggunaan Generative AI terlalu
-                                      singkat meskipun terdapat indikasi
-                                      penggunaan AI dalam dokumen maupun
-                                      perangkat lunak.
+user <-------------> procurement_package
+          package_personnel
+```
 
-  **Novice (25% atau 0%)**            Dokumentasi kontribusi tidak
-                                      tersedia dan pernyataan penggunaan
-                                      Generative AI yang diwajibkan tidak
-                                      disertakan.
-  -----------------------------------------------------------------------
+Relasi konseptual di atas merangkum entitas yang tersedia. Detail foreign key dan kolom tetap mengacu pada definisi di `DB_sql/simada.sql`.
 
-**Skor komponen:**
+## Dashboard Information
 
-    Exemplary   Proficient   Developing   Novice
-  ----------- ------------ ------------ --------
-           15        11,25          7,5   ≤ 3,75
+Dashboard menyajikan ringkasan informasi pengadaan, antara lain:
 
-## Perhitungan Nilai Akhir
+- Jumlah paket pengadaan.
+- Total pagu anggaran.
+- Total nilai kontrak.
+- Jumlah paket berdasarkan status.
+- Tingkat penyelesaian paket.
+- Komposisi metode pengadaan.
+- Ringkasan paket berdasarkan OPD.
+- Daftar paket terbaru dan antrean tindakan sesuai role.
 
-**Nilai Akhir = Skor Komponen 1 + Skor Komponen 2 + Skor Komponen 3 +
-Skor Komponen 4**
+Informasi yang ditampilkan dibatasi oleh role dan data yang tersedia pada database simulasi.
+
+## Installation
+
+### Requirements
+
+- Windows, Linux, atau macOS.
+- XAMPP atau lingkungan server setara.
+- PHP **8.0 atau lebih baru**.
+- Apache.
+- MySQL atau MariaDB.
+- Ekstensi PHP PDO MySQL.
+- Browser modern.
+
+### 1. Download Project
+
+Clone repository:
+
+```bash
+git clone https://github.com/CodeCrafter-FourR/SIMADA.git
+```
+
+Atau unduh source code sebagai ZIP dari GitHub, lalu ekstrak ke folder web server.
+
+Contoh lokasi XAMPP:
+
+```text
+C:\xampp\htdocs\ujianrpl
+```
+
+### 2. Start Apache and MySQL
+
+1. Buka XAMPP Control Panel.
+2. Jalankan **Apache**.
+3. Jalankan **MySQL**.
+
+### 3. Create Database
+
+Buka phpMyAdmin:
+
+```text
+http://localhost/phpmyadmin
+```
+
+Buat database baru bernama:
+
+```text
+simada
+```
+
+### 4. Import Database
+
+1. Pilih database `simada`.
+2. Buka tab **Import**.
+3. Pilih file `DB_sql/simada.sql`.
+4. Jalankan proses import.
+5. Pastikan tabel dan view berhasil dibuat.
+
+### 5. Configure Database Connection
+
+Buka file `config.php`. Konfigurasi default yang digunakan:
+
+```php
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'simada');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_CHARSET', 'utf8mb4');
+```
+
+Sesuaikan nilai konfigurasi jika username atau password MySQL pada komputer berbeda.
+
+### 6. Run the Application
+
+Buka browser:
+
+```text
+http://localhost/ujianrpl/
+```
+
+Jika halaman utama tidak terbuka, coba akses:
+
+```text
+http://localhost/ujianrpl/login.php
+```
+
+## Demo Accounts
+
+Database SQL menyediakan akun simulasi untuk pengujian. Akun yang digunakan dalam demonstrasi project:
+
+| Role | Username | Password |
+|---|---|---|
+| Admin | `admin` | `password` |
+| PA/KPA | `pakpa` | `password` |
+| PPK | `ppk1` | `password` |
+
+> [!WARNING]
+> Kredensial di atas merupakan akun demo untuk kebutuhan akademik. Ganti password dan jangan gunakan akun tersebut pada server produksi.
+
+## Testing
+
+Project menyediakan script pengujian pada direktori `test/`.
+
+File pengujian:
+
+- `test/bootstrap.php` — menyiapkan koneksi dan kebutuhan lingkungan pengujian.
+- `test/run.php` — menjalankan rangkaian pengujian.
+
+Pengujian menggunakan database terpisah bernama `simada_test` agar data utama tidak tercampur dengan data pengujian.
+
+Contoh menjalankan test melalui terminal dari direktori project:
+
+```bash
+php test/run.php
+```
+
+Pastikan database pengujian sudah dibuat dan konfigurasi bootstrap sesuai sebelum menjalankan script. Hasil pengujian perlu diperiksa langsung pada lingkungan lokal.
+
+## Security Notes
+
+Implementasi project mencakup beberapa mekanisme dasar:
+
+- Password diverifikasi menggunakan `password_verify()` dan dibuat menggunakan `password_hash()` dengan algoritma Bcrypt.
+- Query database menggunakan PDO prepared statements.
+- Session login diregenerasi setelah autentikasi berhasil.
+- Output halaman menggunakan helper escaping untuk membantu mencegah output HTML yang tidak aman.
+- Akses halaman dashboard memerlukan session login.
+
+Untuk penggunaan di lingkungan produksi, masih diperlukan peninjauan keamanan lebih lanjut, termasuk penguatan otorisasi per aksi, proteksi CSRF, pengaturan cookie session, validasi input, dan pengelolaan kredensial.
+
+## Current Scope and Limitations
+
+Versi project ini difokuskan pada kebutuhan prototype UTS, yaitu:
+
+- Dashboard pengadaan (UC-08).
+- Tiga role pengguna: Admin, PA/KPA, dan PPK.
+- Pengelolaan akun oleh Admin.
+- Pengelolaan dan pemantauan paket sesuai role.
+- Alur persetujuan paket oleh PA/KPA.
+- Database MySQL dengan data simulasi.
+
+Integrasi dengan sistem eksternal, seperti SPSE/LPSE, SIRUP, WhatsApp API, email gateway, dan tanda tangan elektronik, **tidak dinyatakan sebagai fitur aktif pada versi project ini**.
+
+## Repository Information
+
+| Item | Detail |
+|---|---|
+| Project | SIMADA |
+| Organization Context | Sekretariat Daerah Kabupaten Kebumen |
+| Application Type | Web Application |
+| Backend | PHP Native OOP |
+| Database | MySQL / MariaDB |
+| Local Server | XAMPP / Apache |
+| Project Purpose | UTS — Rekayasa Perangkat Lunak |
+| Repository | [CodeCrafter-FourR/SIMADA](https://github.com/CodeCrafter-FourR/SIMADA) |
+
+---
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,50:1D4ED8,100:111827&height=120&section=footer&animation=twinkling" alt="Animated footer">
+
+**SIMADA — Sistem Informasi Pengadaan Barang/Jasa Kabupaten Kebumen**
+
+_Dikembangkan sebagai prototype akademik untuk mendukung pengelolaan dan pemantauan informasi pengadaan._
+
+<sub>Built with PHP Native OOP · MySQL · Apache</sub>
+
+</div>
