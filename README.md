@@ -28,9 +28,9 @@
 
 ## Project Overview
 
-**SIMADA** merupakan aplikasi berbasis web untuk membantu pencatatan, pemantauan, dan penyajian informasi paket pengadaan barang/jasa di lingkungan Sekretariat Daerah Kabupaten Kebumen.
+**SIMADA** adalah aplikasi berbasis web yang dirancang untuk mendukung proses pencatatan, pemantauan, serta penyajian informasi terkait paket pengadaan barang dan jasa di lingkungan Sekretariat Daerah Kabupaten Kebumen.
 
-Project ini dikembangkan sebagai prototype untuk kebutuhan Ujian Tengah Semester (UTS) mata kuliah Rekayasa Perangkat Lunak. Ruang lingkup implementasi berfokus pada dashboard pengadaan, pengelolaan paket, autentikasi, dan pengaturan akses berdasarkan tiga role pengguna.
+Pengembangan aplikasi ini dilakukan dalam bentuk prototype sebagai bagian dari pemenuhan tugas Ujian Tengah Semester (UTS) mata kuliah Rekayasa Perangkat Lunak. Implementasi sistem mencakup fitur dashboard pengadaan, pengelolaan paket, autentikasi pengguna, serta pembagian hak akses berdasarkan tiga peran pengguna (role).
 
 > [!IMPORTANT]
 > Versi ini merupakan prototype akademik dengan data simulasi. Aplikasi bukan pengganti SPSE/LPSE atau sistem resmi pengadaan pemerintah.
