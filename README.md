@@ -1,26 +1,21 @@
-<div align="center">
+ <div align="center">
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:111827,45:1D4ED8,100:06B6D4&height=230&section=header&text=SIMADA&fontSize=68&fontColor=ffffff&fontAlignY=36&desc=Sistem%20Informasi%20Pengadaan%20Barang%2FJasa%20Kabupaten%20Kebumen&descSize=15&descAlignY=58&animation=twinkling" alt="SIMADA animated header">
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&pause=1100&color=2563EB&center=true&vCenter=true&width=720&lines=Procurement+Dashboard+%26+Monitoring;PHP+Native+%7C+OOP+%7C+MySQL;Academic+Prototype+%E2%80%94+Software+Engineering" alt="Animated project description">
 
 <p>
-  <img src="https://img.shields.io/badge/PHP-Native-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP Native">
-  <img src="https://img.shields.io/badge/Architecture-OOP-2563EB?style=for-the-badge" alt="OOP">
-  <img src="https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-  <img src="https://img.shields.io/badge/Server-Apache-D22128?style=for-the-badge&logo=apache" alt="Apache">
-  <img src="https://img.shields.io/badge/Environment-XAMPP-FB7A24?style=for-the-badge" alt="XAMPP">
-  <img src="https://img.shields.io/badge/Status-UTS%20Prototype-0F9D88?style=for-the-badge" alt="UTS Prototype">
+<img src="https://img.shields.io/badge/PHP-Native-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP Native">
+<img src="https://img.shields.io/badge/Architecture-OOP-2563EB?style=for-the-badge" alt="OOP">
+<img src="https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+<img src="https://img.shields.io/badge/Server-Apache-D22128?style=for-the-badge&logo=apache" alt="Apache">
+<img src="https://img.shields.io/badge/Environment-XAMPP-FB7A24?style=for-the-badge" alt="XAMPP">
+<img src="https://img.shields.io/badge/Status-UTS%20Prototype-0F9D88?style=for-the-badge" alt="UTS Prototype">
 </p>
 
 **Aplikasi web untuk dashboard, pemantauan, dan pengelolaan informasi paket pengadaan.**
 
-[Overview](#-project-overview) ·
-[Features](#-core-features) ·
-[Tech Stack](#-technology-stack) ·
-[Architecture](#-system-architecture) ·
-[Installation](#-installation) ·
-[Database](#-database-structure)
+[Overview](#project-overview) · [Features](#core-features) · [Tech Stack](#technology-stack) · [Architecture](#system-architecture) · [Installation](#installation) · [Database](#database-structure)
 
 </div>
 
@@ -63,14 +58,12 @@ Aplikasi menggunakan tiga role utama:
 | Role | Hak Akses Utama |
 |---|---|
 | **Admin** | Melihat ringkasan dashboard dan mengelola akun pengguna. |
-| **PA/KPA** | Melihat informasi paket dan menangani antrean otorisasi/persetujuan paket. |
+| **PA/KPA** | Melihat informasi paket dan menangani antrean otorisasi atau persetujuan paket. |
 | **PPK** | Melihat serta mengelola paket yang menjadi tanggung jawabnya. |
 
 **Pembatasan akses:** menu pengelolaan dan penambahan pengguna hanya tersedia untuk Admin. PA/KPA dan PPK tidak memiliki fitur untuk menambahkan pengguna.
 
 ## Technology Stack
-
-## Teknologi yang Digunakan
 
 | Komponen | Teknologi | Deskripsi Penggunaan |
 |---|---|---|
@@ -167,7 +160,12 @@ ujianrpl/
 └── README.md
 ```
 
-<details>\n<summary><strong>📂 Lihat penjelasan direktori dan file</strong></summary>\n\n### Directory and File Description\n\n| Path | Deskripsi |
+<details>
+<summary><strong>📂 Lihat penjelasan direktori dan file</strong></summary>
+
+### Directory and File Description
+
+| Path | Deskripsi |
 |---|---|
 | `assets/css/` | File stylesheet utama aplikasi. |
 | `assets/img/` | Logo dan aset gambar SIMADA. |
@@ -183,13 +181,20 @@ ujianrpl/
 | `logout.php` | Proses mengakhiri session pengguna. |
 | `dashboard.php` | Halaman dashboard berdasarkan role. |
 | `tambah-user.php` | Halaman penambahan dan daftar akun pengguna. |
-| `README.md` | Dokumentasi project. |\n\n</details>
+| `README.md` | Dokumentasi project. |
+
+</details>
 
 ## Database Structure
 
 Database aplikasi menggunakan nama **`simada`** dan didefinisikan pada file `DB_sql/simada.sql`.
 
-<details open>\n<summary><strong>🗃️ Detail tabel database</strong></summary>\n\n### Tables\n\n| No. | Nama Tabel | Keterangan |
+<details open>
+<summary><strong>🗃️ Detail tabel database</strong></summary>
+
+### Tables
+
+| No. | Nama Tabel | Keterangan |
 |:--:|---|---|
 | 1 | `role` | Data role atau jenis hak akses pengguna. |
 | 2 | `user` | Akun dan informasi pengguna. |
@@ -201,7 +206,9 @@ Database aplikasi menggunakan nama **`simada`** dan didefinisikan pada file `DB_
 | 8 | `document` | Metadata dokumen paket. |
 | 9 | `notification` | Data notifikasi. |
 | 10 | `audit_log` | Catatan aktivitas sistem. |
-| 11 | `approvals` | Data keputusan persetujuan paket. |\n\n</details>
+| 11 | `approvals` | Data keputusan persetujuan paket. |
+
+</details>
 
 ### Database Views
 
@@ -220,10 +227,10 @@ role
   | 1..*
   v
 user ----------------------+
-  |                        |
-  | PPK                    | activity / approval
-  v                        v
-procurement_package      audit_log
+  |                       |
+  | PPK                   | activity / approval
+  v                       v
+procurement_package    audit_log
   |
   +----------+-------------+-------------+
   |          |             |             |
