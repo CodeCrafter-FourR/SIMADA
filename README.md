@@ -70,19 +70,21 @@ Aplikasi menggunakan tiga role utama:
 
 ## Technology Stack
 
-| Komponen | Teknologi | Penggunaan |
+## Teknologi yang Digunakan
+
+| Komponen | Teknologi | Deskripsi Penggunaan |
 |---|---|---|
-| Backend | PHP Native | Logika aplikasi dan pemrosesan server-side. |
-| Programming Paradigm | Object-Oriented Programming (OOP) | Pemisahan fungsi aplikasi ke dalam class. |
-| Frontend | HTML5 | Struktur halaman aplikasi. |
-| Styling | CSS3 | Tata letak, komponen, dan tampilan antarmuka. |
-| Client-side | JavaScript | Interaksi antarmuka, termasuk pencarian dashboard. |
-| Database | MySQL / MariaDB | Penyimpanan data aplikasi. |
-| Database Access | PDO | Koneksi dan eksekusi query database. |
-| Web Server | Apache | Menjalankan aplikasi PHP. |
-| Local Environment | XAMPP | Lingkungan pengembangan lokal. |
-| Database Administration | phpMyAdmin | Membuat database dan mengimpor SQL. |
-| Version Control | Git | Pengelolaan versi source code. |
+| Backend | PHP Native | Menangani proses bisnis dan pengolahan data pada sisi server. |
+| Programming Paradigm | Object-Oriented Programming (OOP) | Mengorganisasi kode program melalui penggunaan class agar struktur aplikasi lebih teratur. |
+| Frontend | HTML5 | Menyusun elemen dan kerangka halaman pada aplikasi. |
+| Styling | CSS3 | Mengatur desain visual, tata letak, serta elemen tampilan antarmuka. |
+| Client-side | JavaScript | Mendukung interaksi pengguna dengan antarmuka, seperti fitur pencarian pada dashboard. |
+| Database | MySQL / MariaDB | Menyimpan dan mengelola data yang digunakan oleh aplikasi. |
+| Database Access | PDO | Menghubungkan aplikasi dengan database serta menjalankan perintah SQL. |
+| Web Server | Apache | Memproses permintaan dan mendukung eksekusi aplikasi berbasis PHP. |
+| Local Environment | XAMPP | Menyediakan lingkungan server lokal untuk proses pengembangan dan pengujian aplikasi. |
+| Database Administration | phpMyAdmin | Membantu pengelolaan database, termasuk pembuatan database dan proses impor file SQL. |
+| Version Control | Git | Mencatat perubahan kode dan mengelola riwayat pengembangan source code. |
 
 > Project menggunakan **PHP Native OOP**, bukan Laravel atau framework PHP lainnya.
 
